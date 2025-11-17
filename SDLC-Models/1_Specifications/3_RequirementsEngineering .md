@@ -1,25 +1,22 @@
 # Requirements Engineering
 
 - [Requirements Engineering](#requirements-engineering)
-  - [Requirements](#requirements)
+  - [Requirement Types](#requirement-types)
     - [Functional Requirements](#functional-requirements)
     - [Non-functional requirements (NFRs)](#non-functional-requirements-nfrs)
-  - [Artifacts](#artifacts)
-    - [Software Requirements Specifications (SRS)](#software-requirements-specifications-srs)
     - [User Stories](#user-stories)
+    - [Software Requirements Specifications (SRS)](#software-requirements-specifications-srs)
     - [Use-Case Diagram](#use-case-diagram)
-  - [Architecture](#architecture)
-    - [Monolith](#monolith)
-    - [Microservices](#microservices)
+  - [Architecture \& System Design](#architecture--system-design)
+    - [High-Level Design (HLD) vs Low-Level Design (LLD)](#high-level-design-hld-vs-low-level-design-lld)
+    - [Monolith vs Microservice](#monolith-vs-microservice)
     - [System Context Diagram](#system-context-diagram)
-  - [Design](#design)
-    - [High-Level Design (HLD)](#high-level-design-hld)
-    - [Low-Level Design (LLD)](#low-level-design-lld)
 
 
 
-## Requirements
 
+
+## Requirement Types
 
 ### Functional Requirements
 
@@ -32,28 +29,36 @@
 - Scalability
 
 
-## Artifacts
+### User Stories
 
 ### Software Requirements Specifications (SRS)
-
-### User Stories
 
 ### Use-Case Diagram
 
 
 
 
-## Architecture
 
-### Monolith
 
-### Microservices
+
+
+
+
+
+
+
+
+## Architecture & System Design
+
+### High-Level Design (HLD) vs Low-Level Design (LLD)
+
+### Monolith vs Microservice
 
 ### System Context Diagram
 
 
-## Design
 
-### High-Level Design (HLD)
 
-### Low-Level Design (LLD)
+
+
+

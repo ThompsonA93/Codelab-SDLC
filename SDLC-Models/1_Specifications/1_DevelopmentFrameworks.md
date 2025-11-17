@@ -1,8 +1,8 @@
 # Development Frameworks 
 
 - [Development Frameworks](#development-frameworks)
-  - [Waterfall](#waterfall)
-  - [Agile](#agile)
+  - [Waterfall Model](#waterfall-model)
+  - [Agile Methodology](#agile-methodology)
     - [Scrum](#scrum)
     - [Kanban](#kanban)
     - [Feature Driven Development (FDD)](#feature-driven-development-fdd)
@@ -11,7 +11,7 @@
 
 
 
-## Waterfall
+## Waterfall Model
 
 - Requirements
 - Design
@@ -20,7 +20,7 @@
 - Deployment
 
 
-## Agile 
+## Agile Methodology
 
 - Plan
 - Design
@@ -35,6 +35,8 @@
 ### Scrum
 
 ### Kanban
+
+
 
 ### Feature Driven Development (FDD)
 
