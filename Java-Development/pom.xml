@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>at.thauer</groupId>
+    <artifactId>Java-Development</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <url>http://example.com/java-dev</url>
+
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.9.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.28.0</version>
+                <reportSets>
+                    <reportSet>
+                        <id>pmd-report</id>
+                        <configuration>
+                            <rulesets>
+                                <ruleset>/category/java/errorprone.xml</ruleset>
+                                <ruleset>/category/java/design.xml</ruleset>
+                                <ruleset>/category/java/bestpractices.xml</ruleset>
+                                <ruleset>/category/java/security.xml</ruleset>
+                                <ruleset>/category/java/performance.xml</ruleset>
+                                <ruleset>/category/java/multithreading.xml</ruleset>
+                                <ruleset>/category/java/codestyle.xml</ruleset>
+                            </rulesets>
+                        </configuration>
+                        <reports>
+                            <report>pmd</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>cpd-report</id>
+                        <configuration>
+                            <minimumTokens>50</minimumTokens>
+                        </configuration>
+                        <reports>
+                            <report>cpd</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
