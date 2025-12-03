@@ -3,8 +3,8 @@
 - [Toolkits](#toolkits)
   - [Tools of the Trade](#tools-of-the-trade)
     - [Integrated Development Environment (IDE)](#integrated-development-environment-ide)
-    - [Runtime Environments (RE)](#runtime-environments-re)
-    - [Development Kits (DK)](#development-kits-dk)
+    - [Software Development Kits (SDKs)](#software-development-kits-sdks)
+    - [Runtime Environments (RTEs)](#runtime-environments-rtes)
   - [Version Control System  (VCS)](#version-control-system--vcs)
     - [Git](#git)
     - [Branching Strategy](#branching-strategy)
@@ -16,9 +16,10 @@
 
 ### Integrated Development Environment (IDE)
 
-### Runtime Environments (RE)
+### Software Development Kits (SDKs)
 
-### Development Kits (DK)
+### Runtime Environments (RTEs)
+
 
 
 
