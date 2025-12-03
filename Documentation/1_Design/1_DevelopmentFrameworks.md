@@ -5,8 +5,6 @@
   - [Agile Methodology](#agile-methodology)
     - [Scrum](#scrum)
     - [Kanban](#kanban)
-    - [Feature Driven Development (FDD)](#feature-driven-development-fdd)
-    - [Extreme Programming (XP)](#extreme-programming-xp)
 
 
 
@@ -35,18 +33,4 @@
 ### Scrum
 
 ### Kanban
-
-
-
-### Feature Driven Development (FDD)
-
-- Domains
-- Features
-
-### Extreme Programming (XP)
-
-- Pair Programming
-- Test-Driven Development
-- Continuous Integration
-
 

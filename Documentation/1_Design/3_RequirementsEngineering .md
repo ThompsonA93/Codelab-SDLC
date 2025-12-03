@@ -3,18 +3,21 @@
 - [Requirements Engineering](#requirements-engineering)
   - [Customer Communication](#customer-communication)
     - [Elicitation Techniques](#elicitation-techniques)
+    - [Ways of communications](#ways-of-communications)
   - [Formalizing Requirements](#formalizing-requirements)
   - [Software Requirements Specifications (SRS)](#software-requirements-specifications-srs)
     - [Functional Requirements](#functional-requirements)
     - [External Requirements](#external-requirements)
     - [Non-functional requirements (NFRs)](#non-functional-requirements-nfrs)
+    - [Optional Requirements](#optional-requirements)
   - [Visualization and Models](#visualization-and-models)
     - [User Stories](#user-stories)
-    - [Use-Case Diagram](#use-case-diagram)
-    - [System Context Diagram](#system-context-diagram)
-  - [Models to System Architecture](#models-to-system-architecture)
-    - [High-Level Design (HLD) vs Low-Level Design (LLD)](#high-level-design-hld-vs-low-level-design-lld)
-    - [Monolith vs Microservice](#monolith-vs-microservice)
+    - [High-Level Design](#high-level-design)
+    - [Low-Level Design](#low-level-design)
+  - [Models to Software](#models-to-software)
+    - [Internal Architecture](#internal-architecture)
+    - [Decomposition by Service or Module](#decomposition-by-service-or-module)
+    - [Decomposition by Domain or Feature](#decomposition-by-domain-or-feature)
 
 
 ## Customer Communication
@@ -29,6 +32,9 @@
 - Workshops
 - Joint Application Development
 
+### Ways of communications
+
+
 
 ## Formalizing Requirements
 
@@ -37,6 +43,12 @@
 
 ## Software Requirements Specifications (SRS)
 
+- ISO/IEC/IEEE 29148
+  - Introduction
+  - System Description
+  - Specific Requirements
+  - Appendix
+
 ### Functional Requirements
 
 - System Behavior
@@ -44,8 +56,10 @@
 
 ### External Requirements
 
-- Hardware/Software
-- Communication
+- Hardware Interfaces
+- Software Interfaces
+- Communication Topology & Protocols
+- User I/O and UI/UX
 
 ### Non-functional requirements (NFRs)
 
@@ -55,25 +69,50 @@
 - Reliability
 - Scalability
 
+### Optional Requirements
+
+- Legal Requirements
+- Constraints
+- ...
+
 
 ## Visualization and Models
 
 ### User Stories
 
-### Use-Case Diagram
+### High-Level Design
 
-### System Context Diagram
+- User Stories
+- Use-Case Diagram
+- System Context Diagram
+
+### Low-Level Design
+
+- Entity-Relationship Diagram
+- Sequence Diagram
+- UML Class Diagramm
 
 
+## Models to Software
+
+### Internal Architecture
+
+- Layered Architecture (N-Tier)
+- Hexagonal Architecture
+- Onion/Clean Architecture
 
 
+### Decomposition by Service or Module
 
+- Service-Oriented Architecture
+- Event-oriented Architecture
+- Aspect-oriented Architecture
 
-## Models to System Architecture
+### Decomposition by Domain or Feature
 
-### High-Level Design (HLD) vs Low-Level Design (LLD)
+- Domain-Driven Design (DDD)
+- Feature-Driven Design (FDD)
 
-### Monolith vs Microservice
 
 
 
