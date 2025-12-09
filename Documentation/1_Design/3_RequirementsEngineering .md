@@ -16,6 +16,7 @@
     - [Low-Level Design](#low-level-design)
   - [Models to Software](#models-to-software)
     - [Internal Architecture](#internal-architecture)
+    - [External Architecture](#external-architecture)
     - [Decomposition by Service or Module](#decomposition-by-service-or-module)
     - [Decomposition by Domain or Feature](#decomposition-by-domain-or-feature)
 
@@ -97,10 +98,16 @@
 
 ### Internal Architecture
 
-- Layered Architecture (N-Tier)
+- Layered Architecture
 - Hexagonal Architecture
 - Onion/Clean Architecture
 
+### External Architecture
+
+- Monoliths
+- Microservices
+- Micro-Frontends
+- Serverless Architecture (FAAS)
 
 ### Decomposition by Service or Module
 
@@ -112,7 +119,7 @@
 
 - Domain-Driven Design (DDD)
 - Feature-Driven Design (FDD)
-
+- Responsibility-Driven Design (RDD)
 
 
 
