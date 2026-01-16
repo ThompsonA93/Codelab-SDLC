@@ -13,6 +13,5 @@
 
 ## Software as a Service (SaaS)
 
-
 ## Shared Responsibility Model
 
