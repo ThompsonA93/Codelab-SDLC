@@ -6,9 +6,6 @@
     - [Scrum](#scrum)
     - [Kanban](#kanban)
 
-
-
-
 ## Waterfall Model
 
 - Requirements
@@ -27,8 +24,6 @@
 - Deploy
 - Review
 - Repeat
-
-
 
 ### Scrum
 
