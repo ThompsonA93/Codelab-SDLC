@@ -1,4 +1,6 @@
-The practical labs are separated into 4 folders, each representing a stage of the development process following domain-driven architecture.
+> Reference: [Domain-Driven Design, Eric Evans (2003)](https://www.google.com/search?q=Domain+driven+architecture+book+evans)
+
+The practical lab represents the implementation of one continuous project, separated into 4 folders. Each folder represents a stage of the development process following domain-driven architecture.
 
 - [1. Domain Layer](#1-domain-layer)
 - [2. Application Layer](#2-application-layer)
@@ -6,9 +8,9 @@ The practical labs are separated into 4 folders, each representing a stage of th
 - [4. Presentation Layer](#4-presentation-layer)
 - [General Aspects of DDA](#general-aspects-of-dda)
   - [Dependency Rule](#dependency-rule)
-  - [Cross-Cutting Concerns](#cross-cutting-concerns)
   - [Testing strategies](#testing-strategies)
   - [Port and Adapter Types](#port-and-adapter-types)
+  - [Cross-Cutting Concerns](#cross-cutting-concerns)
 
 
 ## 1. Domain Layer
@@ -39,14 +41,12 @@ The presentation layer is another set of the third layer.
 
 ## General Aspects of DDA
 
-
-
 ### Dependency Rule
 
 The dependency rule describes that the inner software layers, the Domain and Application, must remain agnostic of the outer layers, Infrastructure and Presentation.
 This is best described by the concepts of IoC and DI.
 
-1. Inversion of Control (IoC).
+1. **Inversion of Control (IoC)**.
     ```ts
     /**
      * @file src/application/ports/UserRepository.ts
@@ -58,7 +58,7 @@ This is best described by the concepts of IoC and DI.
     findById(id: string): Promise<{ name: string } | null>;
     }
     ```
-2. Dependency Injection (DI).
+2. **Dependency Injection (DI)**.
     ```ts
     /**
      * @file src/application/use-cases/GetUserUseCase.ts
@@ -94,11 +94,11 @@ This is best described by the concepts of IoC and DI.
     }
     }
     ```
-3. Composition Root
+3. **Composition Root**.
     ```ts
     /**
      * @file src/di-container.ts
-     * This is the central location where dependencies are resolved and injected,
+     * T
      * the composition root. It is the only file permitted to know about both the 
      * infrastructure adapters and the application use-cases to wire them together.
      */
@@ -110,10 +110,6 @@ This is best described by the concepts of IoC and DI.
     ```
 
 
-### Cross-Cutting Concerns
-
-- Common Kernel: Contains shared logic used accross all layers, such as domain events, exception management or utility functions.
-- Observability: Logging and Tracing must be accessible by all layers without violating any dependency rule.
 
 ### Testing strategies
 
@@ -128,3 +124,12 @@ This is best described by the concepts of IoC and DI.
 ### Port and Adapter Types
 
 We differentiate between Driven and Driving ports and adapters. Semantically, the difference is whether our software calls upon another service, or if another software calls upon our program.
+
+
+### Cross-Cutting Concerns
+
+- Common Modules: Contains shared logic used accross all layers, such as domain events, exception management or utility functions.
+- Observability: Logging and Tracing must be accessible by all layers without violating any dependency rule.
+
+
+

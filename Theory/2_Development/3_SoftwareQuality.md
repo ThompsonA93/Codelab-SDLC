@@ -6,6 +6,11 @@
     - [Naming Conventions](#naming-conventions)
     - [Formatting and Linters](#formatting-and-linters)
     - [Design Principle: SOLID](#design-principle-solid)
+      - [Single Responsibility](#single-responsibility)
+      - [Open/Close Principle](#openclose-principle)
+      - [Liskov Substitution](#liskov-substitution)
+      - [Interface Segregation](#interface-segregation)
+      - [Dependency Inversion](#dependency-inversion)
   - [Code Smells](#code-smells)
     - [Bloaters](#bloaters)
     - [Inflexibles](#inflexibles)
@@ -35,11 +40,11 @@
 
 ### Design Principle: SOLID
 
-- Single Responsibility
-- Open/Close Principle
-- Liskov Substitution
-- Interface Segregation
-- Dependency Inversion
+#### Single Responsibility
+#### Open/Close Principle
+#### Liskov Substitution
+#### Interface Segregation
+#### Dependency Inversion
 
 
 
