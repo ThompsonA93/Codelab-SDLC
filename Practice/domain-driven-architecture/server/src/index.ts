@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { showRoutes } from "hono/dev";
+import { cors } from 'hono/cors';
 import { serve } from '@hono/node-server';
 import { Client } from 'pg';
 import { config } from './config';
@@ -18,34 +18,25 @@ async function bootstrap() {
 
   const app = new Hono();
 
-  const userModule = new UserModule(dbClient);
-  app.route('/api/users', userModule.routes);
-  showRoutes(app);
+  app.use('/api/*', cors({
+    origin: 'http://localhost:5173',
+    allowMethods: ['POST', 'GET', 'OPTIONS'],
+  }));
 
+  const userModule = new UserModule(dbClient);
+
+  const routes = app.route('/api/users', userModule.routes);
+
+  console.log(`Composition Root successfully wired. Server running on port ${config.port}`);
+  
   serve({
     fetch: app.fetch,
     port: config.port,
   });
 
+  return routes;
 }
+
+export type AppType = Awaited<ReturnType<typeof bootstrap>>;
 
 bootstrap();
-
-/**
-URL: http://localhost:3000/api/users/register
-Header: Content-Type application/json
-Body as raw: 
-{
-  "username": "thomas_auer",
-  "email": "thomas.auer@bxample.com",
-  "passwordPlain": "securePassword123"
-} 
-
-URL: http://localhost:3000/api/users/login
-Header: Content-Type application/json
-Body as raw:
-{
-  "email": "thomas.auer@example.com",
-  "passwordPlain": "securePassword123"
-}
-*/
