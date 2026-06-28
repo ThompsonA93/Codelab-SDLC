@@ -1,16 +1,15 @@
 services:
   postgres:
     build:
-      context: ./0_database
+      context: ./docker/database
       dockerfile: Dockerfile
     container_name: dda-postgres
-    restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: dda_db
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
     ports:
-      - "54325:5432"
+      - "${DATABASE_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql
 
