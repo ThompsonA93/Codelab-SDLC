@@ -23,7 +23,6 @@ export class LoginUserUseCase {
 
     const primitives = user.toPrimitives();
     
-    // Split stored "password:salt" format to check the value
     const [storedPassword] = primitives.passwordHash.split(':');
     
     const isPasswordValid = dto.passwordPlain === storedPassword; 
